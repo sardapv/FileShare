@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button layoutX="94.0" layoutY="151.0" mnemonicParsing="false" onAction="#buttonclick" prefHeight="54.0" prefWidth="121.0" text="Send" textAlignment="JUSTIFY" textFill="#5500ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="384.0" layoutY="151.0" mnemonicParsing="false" onAction="#buttonclick2" prefHeight="54.0" prefWidth="121.0" text="Receive" textFill="#05ab1e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="176.0" layoutY="56.0" prefHeight="95.0" prefWidth="249.0" text="Want To Share?" textFill="#f20091">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl" alignment="CENTER" layoutX="176.0" layoutY="319.0" onDragDetected="#buttonclick" prefHeight="54.0" prefWidth="249.0" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Font" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="233.0" layoutY="240.0" mnemonicParsing="false" onAction="#choose" prefHeight="54.0" prefWidth="134.0" text="Choose Folder">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
