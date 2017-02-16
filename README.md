@@ -1,5 +1,6 @@
-<<<<<<< HEAD
+
 # FileShare
+==============
   It is simple File sharing tool that executes bash commands in background. 
   OS supported : Unix & Linux;
   Software Requirement : JDK 8+;
