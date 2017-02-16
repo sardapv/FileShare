@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # FileShare
-  It is simple sharing tool that executes bash commands in background. 
+  It is simple File sharing tool that executes bash commands in background. 
   OS supported : Unix & Linux;
   Software Requirement : JDK 8+;
   Other Requirement : Both systems should be connected to same network;
