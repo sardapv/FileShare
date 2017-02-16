@@ -12,7 +12,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="384.0" layoutY="151.0" mnemonicParsing="false" onAction="#buttonclick2" prefHeight="54.0" prefWidth="121.0" text="Receive" textFill="#05ab1e">
+      <Button fx:id="b" layoutX="384.0" layoutY="151.0" mnemonicParsing="false" onAction="#buttonclick2" prefHeight="54.0" prefWidth="121.0" text="Receive" textFill="#05ab1e">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -22,7 +22,7 @@
             <Font name="Arial" size="25.0" />
          </font>
       </Label>
-      <Label fx:id="lbl" alignment="CENTER" layoutX="176.0" layoutY="319.0" onDragDetected="#buttonclick" prefHeight="54.0" prefWidth="249.0" textAlignment="JUSTIFY">
+      <Label fx:id="lbl" alignment="CENTER" layoutX="15.0" layoutY="319.0" onDragDetected="#buttonclick" prefHeight="54.0" prefWidth="570.0" textAlignment="JUSTIFY" textFill="#e40000">
          <font>
             <Font name="System Font" size="16.0" />
          </font>
