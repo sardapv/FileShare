@@ -1,0 +1,10 @@
+#ap,#bp{
+    -fx-background-image: url("bg.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center;
+    -fx-border-color: black;
+    -fx-border-width: 200%;
+}
+.button{
+    -fx-background-color: gainsboro;
+}

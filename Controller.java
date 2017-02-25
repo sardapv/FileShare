@@ -4,7 +4,6 @@ import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -34,7 +33,7 @@ public class Controller implements Initializable {
 
     @FXML
     private WebView wv;
-    private WebEngine engine;
+
 
     InetAddress IP = InetAddress.getLocalHost();
     String currentIP = IP.getHostAddress();
@@ -59,9 +58,8 @@ public class Controller implements Initializable {
     public void buttonclick2() throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/Web.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
-            stage.setScene(new Scene(root1));
+            stage.setScene(new Scene(fxmlLoader.load()));
             stage.show();
         } catch (Exception e) {
             e.printStackTrace();
@@ -76,25 +74,13 @@ public class Controller implements Initializable {
         engine.locationProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observableValue, String oldLoc, String newLoc) {
-                // check if the newLoc corresponds to a file you want to be downloadable
-                // and if so trigger some code and dialogs to handle the download.
-                String downloadableExtension = null;  // todo I wonder how to find out from WebView which documents it could not process so that I could trigger a save as for them?
-                String[] downloadableExtensions = {".doc", ".docx", ".pdf", ".xls", ".odt", ".zip", ".tgz", ".jar", ".java", ".fxml",".mp4",".avi",".mp3",".ppt","pptx","tar.gz",".c",".cpp",".xml",".dmg",".exe","dpkg",".iso"};
-                for (String ext : downloadableExtensions) {
-                    if (newLoc.endsWith(ext)) {
-                        downloadableExtension = ext;
-                        break;
-                    }
-                }
-                if (downloadableExtension != null) {
                     // create a file save option for performing a download.
                     FileChooser chooser = new FileChooser();
                     chooser.setTitle("Save As " + newLoc);
-                    chooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Downloadable File", downloadableExtension));
-                    int filenameIdx = newLoc.lastIndexOf("/") + 1;
-                    if (filenameIdx != 0) {
-                        String fileName = newLoc.substring(filenameIdx);
+                    System.out.println(chooser.getTitle());
 
+
+                        chooser.setInitialFileName(chooser.getTitle());
                         File saveFile = chooser.showSaveDialog(wv.getScene().getWindow());
 
                         if (saveFile != null) {
@@ -136,8 +122,6 @@ public class Controller implements Initializable {
                             }
                         }
                         // todo provide feedback on the save function and provide a download list and download list lookup.
-                    }
-                }
         });
     }
 
