@@ -1,7 +1,8 @@
 #ap,#bp{
-    -fx-background-image: url("bg.jpg");
-    -fx-background-repeat: stretch;
+    -fx-background-image: url("bg.jpeg");
+    -fx-background-repeat: inherit;
     -fx-background-position: center;
+    -fx-background-size: stretch;
     -fx-border-color: black;
     -fx-border-width: 200%;
 }
