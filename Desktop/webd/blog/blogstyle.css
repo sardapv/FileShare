@@ -1,0 +1,31 @@
+body{
+	border: 20px solid #bdc3c7;
+	padding: 20px 20px 20px 20px;
+	max-width: 700px;
+	width: 80%;
+	margin: 20px auto 0 auto;
+	font-family: source sans pro;
+	text-align: justify;
+}
+h2{
+	color: #2c3e50;
+	font-size: 2.0rem;
+}
+.quote{
+	border-left: 5px solid grey;
+	padding-left: 5px;
+}
+.date{
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	font-weight: 500;
+
+}
+.post{
+	margin-bottom: 20px;
+}
+/*hr { height: 30px; border-style: solid; border-color: black; border-width: 1px 0 0 0; border-radius: 20px; }
+hr:before {  Not really supposed to work, but does  display: block; content: ""; height: 30px; margin-top: -31px; border-style: solid; border-color: black; border-width: 0 0 1px 0; border-radius: 20px; }*/
+hr { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+margin-bottom: 20px; }

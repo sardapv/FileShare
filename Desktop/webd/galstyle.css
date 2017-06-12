@@ -1,0 +1,25 @@
+/*#one{
+	background-color: red;
+}
+#two{
+	background-color: purple;
+}
+div{
+	width: 100px;
+	float: left;
+}*/
+img{
+	width: 30%;
+	float: left;
+ 	margin: 1.66%;
+}
+p{
+	font-family: cursive;
+	font-size: 35px;
+	color: grey
+	margin:1.66%;
+	font-weight: bold;
+	border-bottom: 3px solid grey;
+	width: 25%;
+	padding-bottom: 20px;
+}

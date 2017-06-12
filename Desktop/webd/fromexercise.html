@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise Solution</title>
+</head>
+<body>
+<h1>Register</h1>
+<form>
+	<div>
+	<label>First Name:<input type="text" name="firstname" required placeholder="John"></label>
+	<label>Last Name:<input type="text" name="lastname" required placeholder="Smith"></label>
+	</div>
+
+	<div>
+	<label>Male<input type="radio" name="gender" value="Male"></label>
+	<label>Female<input type="radio" name="gender" value="Female"></label>
+	<label>Other<input type="radio" name="gender" value="Other"></label>
+	</div>
+
+	<div>	
+	<label>Email<input type="email" name="email" required placeholder="Your email"></label>
+	<label>Password<input type="Password" name="password" required placeholder="your password" minlength="5" maxlength="10"></label>
+	</div>
+
+	<div>
+	<label>Birthday :<select name="month">
+		<option value="" disabled selected>Month</option>
+		<option value="Dec">Dec</option>
+		<option value=Jan>Jan</option>
+	</select>
+	<select name="day">
+		<option value="" disabled selected >Day</option>
+		<option value="7">7</option>
+		<option value="6">7</option>
+	</select>
+	<select name="year">
+		<option value="" disabled selected >Year</option>
+		<option value="1996">1996</option>
+		<option value="1974">1974</option>
+	</select>
+	</label>
+	</div>
+
+	<div>
+		<label>I agree to the terms and conditions <input type="checkbox" name="agree" required></label>
+	</div>
+	<button>Submit</button>
+</form>
+</body>
+</html>
